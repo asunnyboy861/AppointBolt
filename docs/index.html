@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppointBolt - Automated Appointment Reminders</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #fff; }
+        .hero { background: linear-gradient(135deg, #2563EB 0%, #1d4ed8 100%); color: #fff; padding: 80px 20px; text-align: center; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 16px; font-weight: 700; }
+        .hero p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto 32px; }
+        .hero .cta { display: inline-block; background: #fff; color: #2563EB; padding: 14px 32px; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: transform 0.2s; }
+        .hero .cta:hover { transform: scale(1.05); }
+        .features { max-width: 900px; margin: 0 auto; padding: 60px 20px; }
+        .features h2 { text-align: center; font-size: 2rem; margin-bottom: 40px; color: #1a1a1a; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px; }
+        .feature-card { background: #f8f9fa; border-radius: 16px; padding: 28px; text-align: center; }
+        .feature-card .icon { font-size: 2.5rem; margin-bottom: 12px; }
+        .feature-card h3 { font-size: 1.1rem; margin-bottom: 8px; color: #2563EB; }
+        .feature-card p { font-size: 0.95rem; color: #666; }
+        .pricing { background: #f8f9fa; padding: 60px 20px; }
+        .pricing h2 { text-align: center; font-size: 2rem; margin-bottom: 40px; color: #1a1a1a; }
+        .pricing-grid { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
+        .pricing-card { background: #fff; border-radius: 16px; padding: 32px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .pricing-card.popular { border: 2px solid #2563EB; position: relative; }
+        .pricing-card.popular::before { content: 'Most Popular'; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #2563EB; color: #fff; padding: 4px 16px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; }
+        .pricing-card h3 { font-size: 1.3rem; margin-bottom: 8px; }
+        .pricing-card .price { font-size: 2.5rem; font-weight: 700; color: #2563EB; margin: 16px 0; }
+        .pricing-card .price span { font-size: 1rem; font-weight: 400; color: #666; }
+        .pricing-card ul { list-style: none; text-align: left; margin: 20px 0; }
+        .pricing-card ul li { padding: 6px 0; font-size: 0.95rem; color: #555; }
+        .pricing-card ul li::before { content: '\2713'; color: #10B981; font-weight: bold; margin-right: 8px; }
+        footer { text-align: center; padding: 40px 20px; color: #999; font-size: 0.9rem; }
+        footer a { color: #2563EB; text-decoration: none; margin: 0 12px; }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>AppointBolt</h1>
+        <p>Stop no-shows before they happen. Automated SMS and push reminders that keep your appointments full and your revenue protected.</p>
+        <a href="https://apps.apple.com/app/appointbolt" class="cta">Download on the App Store</a>
+    </section>
+
+    <section class="features">
+        <h2>Why AppointBolt?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon">&#128276;</div>
+                <h3>Smart Reminders</h3>
+                <p>Automated push and SMS reminders at customizable intervals. Never miss an appointment again.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#128241;</div>
+                <h3>SMS Notifications</h3>
+                <p>Send real SMS reminders directly to your clients. Higher response rates than email or push alone.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#128197;</div>
+                <h3>Calendar Sync</h3>
+                <p>Seamlessly sync with Apple Calendar and Google Calendar. All your appointments in one place.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#128200;</div>
+                <h3>Analytics Dashboard</h3>
+                <p>Track no-show rates, revenue impact, and client trends. Data-driven decisions for your business.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#128172;</div>
+                <h3>Custom Templates</h3>
+                <p>Personalize reminder messages with client name, service, date, and time variables.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#128101;</div>
+                <h3>Client Management</h3>
+                <p>Track client history, no-show counts, and preferences. Build stronger client relationships.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <h2>Simple Pricing</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Free</h3>
+                <div class="price">$0<span>/mo</span></div>
+                <ul>
+                    <li>Unlimited appointments</li>
+                    <li>Unlimited clients</li>
+                    <li>Push notifications</li>
+                    <li>Calendar sync</li>
+                    <li>No-show tracking</li>
+                </ul>
+            </div>
+            <div class="pricing-card popular">
+                <h3>Pro</h3>
+                <div class="price">$9.99<span>/mo</span></div>
+                <ul>
+                    <li>All Free features</li>
+                    <li>SMS reminders (50/mo)</li>
+                    <li>Email reminders</li>
+                    <li>Custom templates</li>
+                    <li>Client confirm/cancel</li>
+                    <li>Advanced analytics</li>
+                </ul>
+            </div>
+            <div class="pricing-card">
+                <h3>Pro Plus</h3>
+                <div class="price">$19.99<span>/mo</span></div>
+                <ul>
+                    <li>All Pro features</li>
+                    <li>Unlimited SMS</li>
+                    <li>Team support (3 staff)</li>
+                    <li>Online booking page</li>
+                    <li>Data export (CSV)</li>
+                    <li>Priority support</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <p>&copy; 2026 AppointBolt. All rights reserved.</p>
+    </footer>
+</body>
+</html>
