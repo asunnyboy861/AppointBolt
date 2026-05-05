@@ -15,10 +15,10 @@
 
 | Page | URL | Status |
 |------|-----|--------|
-| Landing Page | https://asunnyboy861.github.io/AppointBolt/ | ⏳ Pending |
-| Support | https://asunnyboy861.github.io/AppointBolt/support.html | ⏳ Pending |
-| Privacy Policy | https://asunnyboy861.github.io/AppointBolt/privacy.html | ⏳ Pending |
-| Terms of Use | https://asunnyboy861.github.io/AppointBolt/terms.html | ⏳ Pending |
+| Landing Page | https://asunnyboy861.github.io/AppointBolt/ | ✅ Active |
+| Support | https://asunnyboy861.github.io/AppointBolt/support.html | ✅ Active |
+| Privacy Policy | https://asunnyboy861.github.io/AppointBolt/privacy.html | ✅ Active |
+| Terms of Use | https://asunnyboy861.github.io/AppointBolt/terms.html | ✅ Active |
 
 **Note**: Terms of Use required for IAP subscription apps.
 
